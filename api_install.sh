@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # Instalar Python y las dependencias de FastAPI
-sudo yum install python3
+sudo yum -y install python3
 sudo pip3 install fastapi
 mkdir /var/www/ApiServer
 
 # Clonar el código de la aplicación
-git clone https://github.com/<username>/<repo_name> /var/www/ApiServer
+git clone https://github.com/Josuearv/api_voip.git /var/www/ApiServer
 pass = $(cat passwordMysql.log)
 
 # Crear un archivo config.py
